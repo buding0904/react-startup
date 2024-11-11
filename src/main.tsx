@@ -1,15 +1,27 @@
-import "~/index.css"
+import React, { FC } from 'react'
+import ReactDOM from 'react-dom/client'
 
-import React from "react"
-import ReactDOM from "react-dom/client"
+import { GlobalCtxProvider } from '@/context/global'
+import { RouterProvider } from 'react-router-dom'
+import { router } from '@/router'
 
-import App from "~/App"
-import { GlobalCtxProvider } from "~/context/global"
+import '@/index.css'
 
-ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-  <React.StrictMode>
+const Entry: FC = () => {
+  return (
     <GlobalCtxProvider>
-      <App />
+      <RouterProvider
+        router={router}
+        future={{
+          v7_startTransition: true,
+        }}
+      />
     </GlobalCtxProvider>
+  )
+}
+
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+  <React.StrictMode>
+    <Entry />
   </React.StrictMode>
 )
