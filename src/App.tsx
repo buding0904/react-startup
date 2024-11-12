@@ -1,9 +1,14 @@
 import { FC } from 'react'
+import ctx, { useInitialAppContext } from '@/context/app'
 
 const App: FC = () => {
-  return <div className='f-col a-c'>
-    App
-  </div>
+  const initialContext = useInitialAppContext()
+
+  return (
+    <ctx.Provider value={initialContext}>
+      <div className="f-col a-c">App</div>
+    </ctx.Provider>
+  )
 }
 
 export default App

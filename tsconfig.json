@@ -22,10 +22,13 @@
 
     "esModuleInterop": true,
     "baseUrl": ".",
+    "typeRoots": [
+      "src/types"
+    ],
     "paths": {
       "@/*": ["src/*"]
     },
   },
-  "include": ["src"],
+  "include": ["src", "src/types/*"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

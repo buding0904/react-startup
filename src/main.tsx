@@ -1,7 +1,8 @@
+import './init'
+
 import React, { FC } from 'react'
 import ReactDOM from 'react-dom/client'
 
-import { GlobalCtxProvider } from '@/context/global'
 import { RouterProvider } from 'react-router-dom'
 import { router } from '@/router'
 
@@ -10,14 +11,12 @@ import 'virtual:uno.css'
 
 const Entry: FC = () => {
   return (
-    <GlobalCtxProvider>
-      <RouterProvider
-        router={router}
-        future={{
-          v7_startTransition: true,
-        }}
-      />
-    </GlobalCtxProvider>
+    <RouterProvider
+      router={router}
+      future={{
+        v7_startTransition: true,
+      }}
+    />
   )
 }
 

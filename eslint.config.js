@@ -16,16 +16,7 @@ export default [
         },
       },
       globals: {
-        WxLogin: 'readonly',
-        _global: 'readonly',
-        _db: 'readonly',
-        _app: 'readonly',
-        _store: 'readonly',
-        _message: 'readonly',
-        _t: 'readonly',
-        _openDialog: 'readonly',
-        _confirm: 'readonly',
-        _openInputDialog: 'readonly',
+        _isWindows: 'readonly',
       },
     },
     rules: {
