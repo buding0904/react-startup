@@ -6,6 +6,7 @@ import { RouterProvider } from 'react-router-dom'
 import { router } from '@/router'
 
 import '@/index.css'
+import 'virtual:uno.css'
 
 const Entry: FC = () => {
   return (
