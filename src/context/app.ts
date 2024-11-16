@@ -1,8 +1,8 @@
-import React, { createContext, useState } from 'react'
+import { createContext, useState } from 'react'
 
 interface AppContext {
   count: number
-  setCount: React.Dispatch<React.SetStateAction<number>>
+  setCount: ContextSetter<number>
 }
 
 const ctx = createContext<AppContext>({} as AppContext)
