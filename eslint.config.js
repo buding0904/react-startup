@@ -24,6 +24,7 @@ export default [
       indent: ['error', 2],
       quotes: ['error', 'single'],
       'object-curly-spacing': ['error', 'always'],
+      '@typescript-eslint/no-explicit-any': 'off',
 
       'react/react-in-jsx-scope': 'off',
       'react/jsx-uses-react': 'error',
