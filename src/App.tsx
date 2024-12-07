@@ -6,7 +6,7 @@ const App: FC = () => {
 
   return (
     <ctx.Provider value={initialContext}>
-      <div className="f-col a-c">App</div>
+      <div className="text-red">App</div>
     </ctx.Provider>
   )
 }
