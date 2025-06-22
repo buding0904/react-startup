@@ -13,9 +13,6 @@ const Entry: FC = () => {
   return (
     <RouterProvider
       router={router}
-      future={{
-        v7_startTransition: true,
-      }}
     />
   )
 }
